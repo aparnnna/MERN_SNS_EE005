@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random color generator</title>
+    <style>
+        body{
+            background-color:whitesmoke;
+        }
+</style>
+</head>
+<body>
+    <button onclick="flip()" style="background-color: aquamarine;">
+        <h1>Flip</h1>
+</button>
+<script>
+
+    const body=document.getElementsByTagName('body')[0];
+    document.write(body);
+    function flip(){
+        var color='rgb('+Math.random()*255+','+Math.random()*255+','+Math.random()*255+')';
+        body.style.backgroundColor=color;
+    }
+</script>
+</body>
+</html>
